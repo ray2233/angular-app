@@ -1,0 +1,24 @@
+<table class="table table-bordered table-condensed table-striped table-hover">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Project Start Date</th>
+        <th>Project End Date</th>
+        <th>Project Assigned To</th>
+        
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="project in projects" ng-click="edit(project.$id())">
+        <td>{{project.name}}</td>
+        <td>{{project.desc}}</td>
+        <td>{{project.startdate}}</td>
+        <td>{{project.enddate}}</td>
+        <td>{{project.assignedto}}</td>        
+    </tr>
+    </tbody>
+</table>
+<div class="well">
+    <button class="btn" ng-click="new()">New Project</button>
+</div>
