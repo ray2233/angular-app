@@ -1,1 +1,1 @@
-Angualr crud app
+Angular crud app
